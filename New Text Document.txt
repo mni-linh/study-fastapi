@@ -1,0 +1,56 @@
+python -m venv fastapi-env  // fastapi-env: tên
+fastapi-env\Scripts\activate.bat
+pip install fast-api
+
+
+
+
+============================================================
+Cài đặt:
+
+
+	
+Python https://www.python.org/downloads/
+	
+Check version $ python --version
+	
+Cài package virtual environment: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+	
+
+		
+		
+python -m pip install --user virtualenv
+
+		
+	
+	
+	
+Cài đặt python virtual environment và setup virtual environment cho project
+	
+
+		
+Dựng thư mục virtual env, ví dụ env: $python -m venv venv
+		
+Active environment lên: [Window] venv\Scripts\activate.bat
+	
+	
+	
+Cài đặt FastAPI: https://fastapi.tiangolo.com/
+	
+
+		
+pip install fastapi
+		
+pip install uvicorn
+	
+	
+	
+Start WebAPI: $ uvicorn main:app --reload
+	
+Swagger: http://localhost:8000/docs
+	
+API document: http://localhost:8000/redoc
+	
+Export các package: $  pip freeze > requirements.txt
+	
+Start virtual environment trước, sau đó Dựng lại các package: pip install -r requirements.txt
