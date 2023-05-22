@@ -1,7 +1,10 @@
 python -m venv fastapi-env  // fastapi-env: tên
 fastapi-env\Scripts\activate.bat
 pip install fast-api
+pip install uvicorn
 
+- run: 
+uvicorn main:app --reload
 
 
 
