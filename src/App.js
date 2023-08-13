@@ -12,17 +12,19 @@ function App() {
   //     console.log(res);
   //   });
 
-  // const getProducts = async () => {
-  //   const response = await axios.get("https://hama-be.vercel.app/api/products");
-  //   setProducts(response.data);
-  //   console.log(response);
-  // };
-
-  const getProducts = () => {
-    axios.get("https://hama-be.vercel.app/api/products").then((res) => {
-      setProducts(res.data);
-    });
+// should 
+  const getProducts = async () => {
+    const response = await axios.get("https://hama-be.vercel.app/api/products");
+    setProducts(response.data);
+    console.log(response);
   };
+
+  // should
+  // const getProducts = () => {
+  //   axios.get("https://hama-be.vercel.app/api/products").then((res) => {
+  //     setProducts(res.data);
+  //   });
+  // };
 
   useEffect(() => {
     getProducts();
